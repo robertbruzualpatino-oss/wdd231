@@ -4,8 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 231</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
 </head>
 <body>
-    <h1>WDD 231 - Robert</h1>
+    <header>
+        <img src="images/home.svg" alt="Site Logo" width="1" height="1">
+        <span>Robert Gabriel Bruzual Patiño</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="#">News & Events</a></li>
+            <li class="current"><a href="#">Dedicated Temples</a></li>
+            <li><a href="#">Announced Temples</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Dedicated Temples</h1>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 | Robert Gabriel Bruzual Patiño | Sucre, Venezuela</p>
+
+        <p id="lastModified"></p>
+
+        <div class="social-links">
+            <a href="https://www.facebook.com/robertgabriel.bruzualpatino.3" target="_blank"><img src="images/facebook.svg"
+                    alt="Facebook" width="16" height="16"></a>
+            <a href="https://www.instagram.com/robertgabrielbruzual/" target="_blank"><img src="images/instagram.svg"
+                    alt="Instagram" width="16" height="16"></a>
+            <a href="https://github.com/robertbruzualpatino-oss" target="_blank"><img src="images/github.svg" alt="Github"
+                    width="16" height="16"></a>
+            <a href="https://www.linkedin.com/?lipi=urn%3Ali%3Apage%3Ad_flagship3_login%3B5Z8YUfDmS9eKyE1OQJagXw%3D%3D"
+                target="_blank"><img src="images/linkedin.svg" alt="Linkedin" width="16" height="16"></a>
+        </div>
+    </footer>
 </body>
 </html>
