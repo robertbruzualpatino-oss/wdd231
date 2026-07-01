@@ -3,49 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>WDD 231 - Web Fronted Development I - Course Home Page</title>
+    <meta name="description" content="Course home page for WDD 231, demostrating prerequisite knowledge of responsive design using semantic HTML, custom CSS, and vanilla JavaScrpit.">
+    <meta name="author" content="Robert Bruzual">
+
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
+
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 <body>
     <header>
-        <img src="images/home.svg" alt="Site Logo" width="1" height="1">
-        <span>Robert Gabriel Bruzual Patiño</span>
-        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+        <div>
+            <img src="images/home.svg" alt="Course Site Logo" width="50" height="50">
+            <span>Robert Bruzual</span>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle navigation menu">
+            &#9776; </button>
     </header>
 
-    <nav id="nav-bar" class="navigation">
-        <ul>
-            <li><a href="#">News & Events</a></li>
-            <li class="current"><a href="#">Dedicated Temples</a></li>
-            <li><a href="#">Announced Temples</a></li>
+    <nav>
+        <ul id="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="final/index.html">Final</a></li>
         </ul>
     </nav>
 
     <main>
-        <h1>Dedicated Temples</h1>
+        <h1>Home</h1>
+
+        <section class="card course-work">
+            <h2>Course Work</h2>
+            </section>
+
+        <section class="card certificate-info">
+            <h2>Web &amp; Computer Programming</h2>
+            <div>
+                <button id="btn-all">All</button>
+                <button id="btn-cse">CSE</button>
+                <button id="btn-wdd">WDD</button>
+            </div>
+            <div id="course-container"></div>
+            <p id="total-credits"></p>
+        </section>
+
+        <section class="card local-info">
+            <h2>Local Information</h2>
+            </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 | Robert Gabriel Bruzual Patiño | Sucre, Venezuela</p>
+        <div class="footer-socials">
+            <a href="https://github.com/robertbruzualpatino-oss" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://www.facebook.com/robertgabriel.bruzualpatino.3" target="_blank" rel="noopener">Facebook</a>
+            <a href="https://www.instagram.com/robertgabrielbruzual/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+
+        <p>
+            &copy;<span id="currentyear"></span> | Robert Bruzual | Venezuela
+        </p>
 
         <p id="lastModified"></p>
-
-        <div class="social-links">
-            <a href="https://www.facebook.com/robertgabriel.bruzualpatino.3" target="_blank"><img src="images/facebook.svg"
-                    alt="Facebook" width="16" height="16"></a>
-            <a href="https://www.instagram.com/robertgabrielbruzual/" target="_blank"><img src="images/instagram.svg"
-                    alt="Instagram" width="16" height="16"></a>
-            <a href="https://github.com/robertbruzualpatino-oss" target="_blank"><img src="images/github.svg" alt="Github"
-                    width="16" height="16"></a>
-            <a href="https://www.linkedin.com/?lipi=urn%3Ali%3Apage%3Ad_flagship3_login%3B5Z8YUfDmS9eKyE1OQJagXw%3D%3D"
-                target="_blank"><img src="images/linkedin.svg" alt="Linkedin" width="16" height="16"></a>
-        </div>
     </footer>
+
 </body>
 </html>

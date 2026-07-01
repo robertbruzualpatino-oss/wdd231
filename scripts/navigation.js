@@ -1,13 +1,6 @@
-const navButton = document.querySelector('#nav-button');
-const navBar = document.querySelector('#nav-bar');
+const menuToggle = document.querySelector("#menu-toggle");
+const navLinks = document.querySelector("#nav-links");
 
-navButton.addEventListener('click', () => {
-    navButton.classList.toggle('show');
-    navBar.classList.toggle('show');
+menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
 })
-
-const lastModifiedElement = document.querySelector('#lastModified');
-
-if (lastModifiedElement) {
-    lastModifiedElement.textContent = `Last Modified: ${document.lastModified}`;
-}
