@@ -1,9 +1,16 @@
 :root {
     --primary-color: #1a365d;
     --accent-color: #d69e2e;
+    --accent-border: #b7791f;
+    --nav-bg: #2b6cb0;
     --text-dark: #2d3748;
     --light-bg: #f7fafc;
     --card-bg: #ffffff;
+    --pure-white: #ffffff;
+    --pure-black: #000000;
+    --border-light: #cbd5e0;
+    --bg-incomplete: #edf2f7;
+    --bg-button: #f0f0f0;
     --font-sans: 'Roboto', sans-serif;
 }
 
@@ -26,7 +33,7 @@ header, main, footer {
 
 header {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--pure-white);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,13 +54,13 @@ header {
 #menu-toggle {
     background: none;
     border: none;
-    color: white;
+    color: var(--pure-white);
     font-size: 2rem;
     cursor: pointer;
 }
 
 nav {
-    background-color: #2b6cb0;
+    background-color: var(--nav-bg);
 }
 
 nav ul {
@@ -68,7 +75,7 @@ nav ul.show {
 
 nav a {
     display: block;
-    color: white;
+    color: var(--pure-white);
     padding: 1rem;
     text-decoration: none;
     text-align: center;
@@ -115,30 +122,30 @@ h1 {
     font-size: 1.1rem;
     flex: 1 1 calc(50% - 10px);
     text-align: center;
-    border: 1px solid #cbd5e0;
+    border: 1px solid var(--border-light);
 }
 
 .course-badge.course-completed {
-    background-color: #d69e2e;
-    color: #000000;
-    border-color: #b7791f;
+    background-color: var(--accent-color);
+    color: var(--pure-black);
+    border-color: var(--accent-border);
 }
 
 .course-badge.course-completed a,
 .course-badge.course-completed a:visited {
-    color: #1a365d;
+    color: var(--pure-black);
     text-decoration: none;
 }
 
 .course-badge.course-incomplete {
-    background-color: #edf2f7;
-    color: #2d3748;
+    background-color: var(--bg-incomplete);
+    color: var(--text-dark);
 }
 
 .filters button {
-    background-color: #f0f0f0;
-    color: #2d3748;
-    border: 1px solid #cbd5e0;
+    background-color: var(--bg-button);
+    color: var(--text-dark);
+    border: 1px solid var(--border-light);
     padding: 0.25rem 0.5rem;
     cursor: pointer;
 }
