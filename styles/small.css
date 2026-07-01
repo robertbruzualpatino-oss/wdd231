@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
 :root {
     --primary-color: #1a365d;
     --accent-color: #d69e2e;
@@ -121,14 +119,14 @@ h1 {
 }
 
 .course-badge.course-completed {
-    background-color: #d69e2e !important;
-    color: #000000 !important;
+    background-color: #d69e2e;
+    color: #000000;
     border-color: #b7791f;
 }
 
 .course-badge.course-completed a,
 .course-badge.course-completed a:visited {
-    color: #1a365d !important;
+    color: #1a365d;
     text-decoration: none;
 }
 
