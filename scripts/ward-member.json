@@ -1,0 +1,28 @@
+{
+    "familyName": "Bruzual Patiño",
+    "moveInDate": "2025-20-07",
+    "numberOfPeople": 4,
+    "visitedByBishopric": true,
+    "familyMembers": [
+        {
+            "name": "Robert Gabriel Bruzual Barrios",
+            "gender": "Male",
+            "birthDate": "1969-07-20"
+        },
+        {
+            "name": "Orlandy Patiño Mago",
+            "gender": "Female",
+            "birthDate": "1982-05-08"
+        },
+        {
+            "name": "Robert Gabriel Bruzual Patiño",
+            "gender": "Male",
+            "birthDate": "2006-10-04"
+        },
+        {
+            "name": "Gabriel Alejandro Bruzual Patiño",
+            "gender": "Male",
+            "birthDate":"2008-10-22"
+        }
+    ]
+}
