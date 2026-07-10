@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Apex Tech Solutions",
+        "address": "123 Innovation Way, Suite 100",
+        "phone": "(555) 019-2834",
+        "website": "https://example.com/apex",
+        "image": "apex-logo.webp",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Green Garden Café",
+        "address": "456 Blossom Lane",
+        "phone": "(555) 014-5566",
+        "website": "https://example.com/greengarden",
+        "image": "cafe-logo.webp",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Summit Financial Group",
+        "address": "789 Capital Blvd",
+        "phone": "(555) 017-8899",
+        "website": "https://example.com/summit",
+        "image": "summit-logo.webp",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Beacon Marketing Agency",
+        "address": "321 Media Drive",
+        "phone":"(555) 012-4411",
+        "website": "https://example.com/beacon",
+        "image": "beacon-logo.webp",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Starlight Hospitality & Hotels",
+        "address": "555 Luxury Row",
+        "phone": "(555) 015-9900",
+        "website": "https://example.com/starlight",
+        "image": "starlight-logo.webp",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Pioneer Logistics",
+        "address": "808 Freight Way",
+        "phone": "(555) 011-2233",
+        "website": "https://example.com/pioneer",
+        "image": "pioneer-logo.webp",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Vanguard Legal Services",
+        "address": "909 Justice Chambers",
+        "phone": "(555) 016-7788",
+        "website": "https://example.com/vanguard",
+        "image": "vanguard-logo.webp",
+        "membershipLevel": 3
+    }
+]

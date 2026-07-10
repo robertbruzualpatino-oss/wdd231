@@ -1,0 +1,86 @@
+header nav ul id,
+header nav ul li a {
+    color: #003fa3;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: inline-block;
+}
+
+header nav ul li a.active {
+    color: #1a1a1a;
+    border-bottom: 2px solid #1a1a1a;
+}
+
+#directory-container section img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: 200px;
+    margin: 0 auto 10px auto;
+    display: block;
+}
+
+#directory-container section .member-level {
+    display: block;
+    margin-top: 10px;
+    padding: 6px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+#directory-container section .level-1 {
+    background-color: #bcbcbc;
+}
+
+#directory-container section .level-2 {
+    background-color: #a6a6a6;
+}
+
+#directory-container section .level-3 {
+    background-color: #e6b800;
+}
+
+#directory-container section a {
+    display: inline-block;
+    margin: 10px 0;
+    color: #003fa3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#directory-container section a:hover {
+    text-decoration: underline;
+    color: #002a6f;
+}
+
+#directory-container.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+#directory-container.grid-view section {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+}
+
+#directory-container.list-view {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#directory-container.list-view section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+}
+
+#directory-container.list-view section img {
+    display: none;
+}

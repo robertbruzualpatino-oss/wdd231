@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce - Directory</title>
+    <meta name="description" content="Business directory page for the Chamber of Commerce project in WDD 231.">
+    <meta name="author" content="Robert Bruzual">
+    <link rel="icon" href="favicon.ico" type="images/x-icon">
+
+    <meta property="og:title" content="Chamber of Commerce Directory">
+    <meta property="og:description" content="Explore and connect with our local business members.">
+    <meta property="og:image" content="https://robertbruzualpatino-oss.github.io/wdd231/blob/main/favicon.ico">
+    <meta property="og:url" content="https://robertbruzualpatino-oss.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+
+    <link rel="icon" href="data:,">
+
+    <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <img src="images/bank.svg" alt="Chamber Logo">
+            <h1>Chamber of Commerce</h1>
+        </div>
+        <nav>
+            <button id="menu-button">☰</button>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Business Directory</h2>
+        <div class="view-toggle">
+            <button id="grid-btn" class="active">🎴 Grid View</button>
+            <button id="list-btn">📋 List View</button>
+        </div>
+
+        <article id="directory-container" class="grid-view"></article>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> | Robert Bruzual | WDD 231</p>
+        <p>Contact: info@chamber.org | (555) 123-4567</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
