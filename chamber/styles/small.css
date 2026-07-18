@@ -41,15 +41,21 @@ header nav ul li a.active {
 
 .level-1 {
     background-color: #bcbcbc;
+    color: #1a1a1a !important;
 }
 
 .level-2 {
     background-color: #a6a6a6;
+    color: #1a1a1a !important;
 }
 
 .level-3 {
     background-color: #e6b800;
     color: #1a1a1a !important;
+}
+
+.your-container-class p {
+    color: rgb(70, 70, 70);
 }
 
 #directory-container section a,
@@ -195,6 +201,10 @@ header nav ul li a.active {
 .card p,
 footer p {
     color: #1a1a1a !important;
+}
+
+.hero-cta p {
+    color: #ffffff !important;
 }
 
 #spotlight-container p,
