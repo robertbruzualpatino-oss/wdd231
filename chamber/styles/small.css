@@ -1,4 +1,10 @@
-header nav ul id,
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; display: flex;
+    gap: 15px;
+}
+
 header nav ul li a {
     color: #003fa3;
     font-weight: bold;
@@ -12,7 +18,8 @@ header nav ul li a.active {
     border-bottom: 2px solid #1a1a1a;
 }
 
-#directory-container section img {
+#directory-container section img,
+#spotlight-container section img {
     max-width: 100%;
     height: auto;
     object-fit: contain;
@@ -21,28 +28,32 @@ header nav ul li a.active {
     display: block;
 }
 
-#directory-container section .member-level {
+#directory-container section .member-level,
+#spotlight-container section .member-level {
     display: block;
     margin-top: 10px;
     padding: 6px;
     font-size: 0.85rem;
     font-weight: bold;
     color: #1a1a1a;
+    border-radius: 4px;
 }
 
-#directory-container section .level-1 {
+.level-1 {
     background-color: #bcbcbc;
 }
 
-#directory-container section .level-2 {
+.level-2 {
     background-color: #a6a6a6;
 }
 
-#directory-container section .level-3 {
+.level-3 {
     background-color: #e6b800;
+    color: #1a1a1a !important;
 }
 
-#directory-container section a {
+#directory-container section a,
+#spotlight-container section a {
     display: inline-block;
     margin: 10px 0;
     color: #003fa3;
@@ -50,7 +61,8 @@ header nav ul li a.active {
     font-weight: bold;
 }
 
-#directory-container section a:hover {
+#directory-container section a:hover,
+#spotlight-container section a:hover {
     text-decoration: underline;
     color: #002a6f;
 }
@@ -83,4 +95,109 @@ header nav ul li a.active {
 
 #directory-container.list-view section img {
     display: none;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: #004b93;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.cta-button:hover {
+    background-color: #002d59;
+}
+
+@media (min-width: 50rem) {
+    .home-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .hero {
+        grid-column: 1 / -1;
+    }
+
+    .events-card {
+        grid-column: 1 / 2;
+    }
+
+    .weather-card {
+        grid-column: 2 / 3;
+    }
+
+    .spotlights-card {
+        grid-column: 1 / -1;
+    }
+}
+
+#menu-button,
+#grid-btn,
+#list-btn {
+    background-color: #003fa3;
+    color: #ffffff !important;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.weather-card p,
+.events-card p,
+.spotlights-card p,
+footer p {
+    color: #222222 !important;
+}
+
+#lastModified,
+#current-year,
+.desc {
+    color: #1a1a1a !important;
 }

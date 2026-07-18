@@ -1,5 +1,22 @@
-const dataUrl = "data/members.json";
-const container = document.querySelector("#directory-container");
+const gridBtn = document.querySelector("#grid-btn");
+const listBtn = document.querySelector("#list-btn");
+const directoryContainer = document.querySelector("#directory-container");
+
+if (gridBtn && listBtn && directoryContainer) {
+    gridBtn.addEventListener("click", () => {
+        directoryContainer.classList.add("grid-view");
+        directoryContainer.classList.remove("list-view");
+        gridBtn.classList.add("active");
+        listBtn.classList.remove("active");
+    });
+
+    listBtn.addEventListener("click", () => {
+        directoryContainer.classList.add("list-view");
+        directoryContainer.classList.remove("grid-view");
+        listBtn.classList.add("active");
+        gridBtn.classList.remove("active");
+    });
+}
 
 document.getElementById("lastModified").textContent = document.lastModified;
 
@@ -44,19 +61,24 @@ function displayMembers(members) {
 const gridButton = document.querySelector("#grid-btn");
 const listButton = document.querySelector("#list-btn");
 const menuButton = document.querySelector("#menu-button");
+const navMenu = document.querySelector("#nav-menu");
+const displayContainer = document.querySelector("#directory-container");
 
-gridButton.addEventListener("click", () => {
-    container.classList.add("grid-view");
-    container.classList.remove("list-view");
-});
+if (gridButton && listButton && displayContainer) {
+    gridButton.addEventListener("click", () => {
+        displayContainer.classList.add("grid-view");
+        displayContainer.classList.remove("list-view");
+    });
 
-listButton.addEventListener("click", () => {
-    container.classList.add("list-view");
-    container.classList.remove("grid-view");
-});
+    listButton.addEventListener("click", () => {
+        displayContainer.classList.add("grid-view");
+        displayContainer.classList.remove("list-view");
+    });
+}
 
-menuButton.addEventListener("click", () => {
-    document.querySelector("#nav-menu").classList.toggle("show");
-});
-
-getMembers();
+if (menuButton && navMenu) {
+    menuButton.addEventListener("click", () => {
+        navMenu.classList.toggle("show");
+        menuButton.textContent = navMenu.classList.contains("show") ? "❌" : "☰";
+    });
+}
