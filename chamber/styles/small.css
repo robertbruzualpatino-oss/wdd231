@@ -192,12 +192,13 @@ header nav ul li a.active {
 .weather-card p,
 .events-card p,
 .spotlights-card p,
+.card p,
 footer p {
-    color: #222222 !important;
+    color: #1a1a1a !important;
 }
 
-#lastModified,
-#current-year,
-.desc {
+#spotlight-container p,
+#current-weather p,
+#forecast-container span {
     color: #1a1a1a !important;
 }
