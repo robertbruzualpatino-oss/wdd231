@@ -41,21 +41,17 @@ header nav ul li a.active {
 
 .level-1 {
     background-color: #bcbcbc;
-    color: #1a1a1a !important;
+    color: #1a1a1a;
 }
 
 .level-2 {
     background-color: #a6a6a6;
-    color: #1a1a1a !important;
+    color: #1a1a1a;
 }
 
 .level-3 {
     background-color: #e6b800;
-    color: #1a1a1a !important;
-}
-
-.your-container-class p {
-    color: rgb(70, 70, 70);
+    color: #1a1a1a;
 }
 
 #directory-container section a,
@@ -116,14 +112,6 @@ header nav ul li a.active {
     grid-template-columns: 1fr;
     gap: 1.5rem;
     padding: 1rem;
-}
-
-.card {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1.2rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 .hero {
@@ -269,10 +257,7 @@ dialog {
     border-radius: 8px;
     max-width: 500px;
     width: 90%;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: auto;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -355,17 +340,20 @@ footer p {
 
 main p,
 main span,
+footer p,
+#spotlight-container p,
 #current-weather p,
-#forecast-container span,
-footer p {
-    color: #1a1a1a !important;
+#forecast-container span {
+    color: #1a1a1a;
 }
 
 .card {
+    background-color: #f9f9f9;
     border: 1px solid #ccc;
     padding: 1.5rem;
     margin-bottom: 1rem;
     border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
     animation: fadeIn 0.8s ease-out forwards;
     opacity: 0;
 }

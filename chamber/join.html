@@ -6,7 +6,7 @@
     <title>Chamber of Commerce - Join</title>
     <meta name="description" content="Join page for the Chamber of Commerce project in WDD 231.">
     <meta name="author" content="Robert Bruzual">
-    <link rel="icon" href="favicon.ico" type="images/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <meta property="og:title" content="Chamber of Commerce - Join">
     <meta property="og:description" content="Apply to join the Chamber of Commerce and explore membership benefits.">
@@ -21,9 +21,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
 
-    <link rel="icon" href="data:,">
-
-    <script src="scripts/join.js"></script>
+    <script src="scripts/join.js" defer></script>
 </head>
 <body>
     <header>
@@ -46,11 +44,11 @@
             <form method="get" action="thankyou.html" id="joinForm">
 
                 <label>First Name:
-                    <input type="text" name="fname" id="fname" required autocomplete="given-name" title="Robert">
+                    <input type="text" name="fname" id="fname" required autocomplete="given-name">
                 </label>
 
                 <label>Last Name:
-                    <input type="text" name="lname" id="lname" required autocomplete="family-name" title="Bruzual">
+                    <input type="text" name="lname" id="lname" required autocomplete="family-name">
                 </label>
 
                 <label>Organizational Title:
@@ -65,11 +63,11 @@
                 </label>
 
                 <label>Mobile Phone:
-                    <input type="tel" name="phone" id="phone" required autocomplete="tel" title="0424-846-0227">
+                    <input type="tel" name="phone" id="phone" required autocomplete="tel" title="123-456-7890">
                 </label>
 
                 <label>Business / Organization Name:
-                    <input type="text" name="organization" id="organization" required autocomplete="organization" title="None">
+                    <input type="text" name="organization" id="organization" required autocomplete="organization">
                 </label>
 
                 <label>Membership Level:
@@ -115,7 +113,7 @@
 
             <div class="card gold-card">
                 <h3>Gold Membership</h3>
-                <p>Maximun exposure, spotlight positioning, and exclusive perks.</p>
+                <p>Maximum exposure, spotlight positioning, and exclusive perks.</p>
                 <button type="button" class="open-modal" data-modal="modal-gold">Learn More</button>
             </div>
         </section>
