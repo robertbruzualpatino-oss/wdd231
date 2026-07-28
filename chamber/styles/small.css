@@ -54,6 +54,10 @@ header nav ul li a.active {
     color: #1a1a1a;
 }
 
+.card p {
+    color: #1a1a1a;
+}
+
 #directory-container section a,
 #spotlight-container section a {
     display: inline-block;
@@ -214,7 +218,7 @@ header nav ul li a.active {
 .form-section input[type="submit"],
 .form-container input[type="submit"] {
     background-color: #003fa3;
-    color: #ffffff !important;
+    color: #ffffff;
     font-weight: bold;
     font-size: 1.1rem;
     padding: 0.85rem 1.5rem;
@@ -237,7 +241,7 @@ header nav ul li a.active {
 
 .card button.open-modal {
     background-color: #003fa3;
-    color: #ffffff !important;
+    color: #ffffff;
     border: none;
     padding: 0.6rem 1.2rem;
     font-weight: bold;
@@ -312,7 +316,7 @@ dialog .close-modal:hover {
 #grid-btn,
 #list-btn {
     background-color: #003fa3;
-    color: #ffffff !important;
+    color: #ffffff;
     border: none;
     padding: 10px 15px;
     border-radius: 4px;
@@ -325,17 +329,17 @@ dialog .close-modal:hover {
 .spotlights-card p,
 .card p,
 footer p {
-    color: #1a1a1a !important;
+    color: #1a1a1a;
 }
 
 .hero-cta p {
-    color: #ffffff !important;
+    color: #ffffff;
 }
 
 #spotlight-container p,
 #current-weather p,
 #forecast-container span {
-    color: #1a1a1a !important;
+    color: #1a1a1a;
 }
 
 main p,
