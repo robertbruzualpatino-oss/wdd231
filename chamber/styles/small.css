@@ -103,6 +103,14 @@ header nav ul li a.active {
     display: none;
 }
 
+#joinForm,
+#join-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    max-width: 100%;
+}
+
 .home-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -161,6 +169,134 @@ header nav ul li a.active {
     background-color: #002d59;
 }
 
+.join-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.form-section label,
+.form-container label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: #1a1a1a;
+    font-size: 0.95rem;
+    gap: 0.4rem;
+}
+
+.form-section input[type="text"],
+.form-section input[type="email"],
+.form-section input[type="tel"],
+.form-section select,
+.form-section textarea,
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="tel"],
+.form-container select,
+.form-container textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #777;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.form-section textarea,
+.form-container textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.form-section input:focus,
+.form-section select:focus,
+.form-section textarea:focus,
+.form-container input:focus,
+.form-container select:focus,
+.form-container textarea:focus {
+    border-color: #003fa3;
+    outline: 2px solid #003fa3;
+    background-color: #f0f7ff;
+}
+
+.form-section input[type="submit"],
+.form-container input[type="submit"] {
+    background-color: #003fa3;
+    color: #ffffff !important;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.85rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    margin-top: 0.5rem;
+}
+
+.form-section input[type="submit"]:hover,
+.form-container input[type="submit"]:hover {
+    background-color: #002d59;
+}
+
+.form-section input[type="submit"]:active,
+.form-container input[type="submit"]:active {
+    transform: scale(0.98);
+}
+
+.card button.open-modal {
+    background-color: #003fa3;
+    color: #ffffff !important;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 0.8rem;
+    transition: background-color 0.2s;
+}
+
+.card button.open-modal:hover {
+    background-color: #002d59;
+}
+
+dialog {
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+dialog h3 {
+    margin-top: 0;
+    color: #003fa3;
+}
+
+dialog .close-modal {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.75rem;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+}
+
+dialog .close-modal:hover {
+    color: #d32f2f;
+}
+
 @media (min-width: 50rem) {
     .home-grid {
         grid-template-columns: 2fr 1fr;
@@ -180,6 +316,10 @@ header nav ul li a.active {
 
     .spotlights-card {
         grid-column: 1 / -1;
+    }
+
+    .join-container {
+        grid-template-columns: 2fr 1fr;
     }
 }
 
@@ -219,4 +359,33 @@ main span,
 #forecast-container span,
 footer p {
     color: #1a1a1a !important;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    animation: fadeIn 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.25s; }
+.card:nth-child(3) { animation-delay: 0.4s; }
+.card:nth-child(4) { animation-delay: 0.55s; }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
 }

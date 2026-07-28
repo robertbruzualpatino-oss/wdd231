@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce - Thank You</title>
+    <meta name="description" content="Confirmation page for the Chamber of Commerce membership appliccation.">
+    <meta name="author" content="Robert Bruzual">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <meta property="og:title" content="Chamber of Commerce - Thank You">
+    <meta property="og:description" content="Thank You for joining the chamber of Commerce.">
+    <meta property="og:image" content="https://robertbruzualpatino-oss.github.io/wdd231/chamber/images/bank.svg">
+    <meta property="og:url" content="https://robertbruzualpatino-oss.github.io/wdd231/chamber/thankyou.html">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+
+    <link rel="icon" href="data:,">
+
+    <script src="scripts/thankyou.js"></script>
+</head>
+<body>
+    <header>
+        <div class="log-container">
+            <img src="images/bank.svg" alt="Chamber Logo" width="80" height="80">
+            <span>Chamber of Commerce</span>
+        </div>
+        <nav>
+            <button id="menu-button" aria-label="Toggle Navigation">☰</button>
+            <ul id="nav-menu">
+                <li><a href="index.html"></a></li>
+                <li><a href="directory.html"></a></li>
+                <li><a href="join.html"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="thankyou-container">
+        <h1>Thank You for Applying!</h1>
+        <p>We have successfully recieved your membership registration request. Below are the details submitted from your application:</p>
+
+        <div id="results" class="results-card">
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Robert Bruzual | WDD 231</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
