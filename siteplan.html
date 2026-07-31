@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Plan - EcoAdventure Venezuela</title>
+    <meta name="description" content="Site plan and design document for EcoAdventure Venezuela, an interactive web application for eco-tourism and outdoor adventure activities.">
+    <meta name="author" content="Robert Bruzual">
+    <link rel="stylesheet" href="styles/siteplan.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <script src="scripts/siteplan.js" defer></script>
+</head>
+<body>
+    
+    <header>
+        <h1>Site Plan: EcoAdventure Venezuela</h1>
+        <h2>WDD 231 Individual Project Blueprint</h2>
+    </header>
+
+    <main>
+
+        <section class="plan-section">
+            <h2>Site Name</h2>
+            <p><strong>Proposed Name:</strong> EcoAdventure Venezuela</p>
+            <p><strong>Reasoning:</strong> The name clearly communicates the platform's core focus: sustainable eco-tourism, outdoor exploration, and adventure activities across Venezuela. It establishes immediate brand identity for both local and international travelers.</p>
+            <p><strong>Optional Domain:</strong> <code>ecoadventure-ve.org</code></p>
+        </section>
+
+        <section class="plan-section">
+            <h2>Site Purpose</h2>
+            <p>EcoAdventure Venezuela is a dynamic 3-page web application designed to promote sustainable local tourism. It serves as an interactive booking and informational guide featuring dynamic weather updates, a filterable tour package catalog powered by external/local JSON data, detailed modal dialogs for trip itineraries, and a reservation form with client-side validation and URL query parameter parsing on submission.</p>
+        </section>
+
+        <section class="plan-section">
+            <h2>Target Audience Scenarios</h2>
+            <ul>
+                <li><strong>Scenario 1:</strong> "Where can I find guided hiking or mountain excursions tailored to my physical fitness level with clear itinerary breakdowns?"</li>
+                <li><strong>Scenario 2:</strong> "How can I filter tour packages specifically for coastal/beach activities and check live weather conditions before booking?"</li>
+            </ul>
+        </section>
+
+        <section class="plan-section">
+            <h2>Color Scheme</h2>
+            <p>The chosen color scheme reflects Venezuela's diverse landscapes-from rainforests and Tepuis to Caribbean beaches-while maintaining WCAG AAA contrast ratios for accessibility.</p>
+
+            <div class="color-palette">
+                <div class="color-box primary-bg">
+                    <h3>Primary (Forest Green)</h3>
+                    <p><code>#1E4D2B</code></p>
+                    <p>Used for: Main header, primary buttons, and hero background accents.</p>
+                </div>
+                <div class="color-box secondary-bg">
+                    <h3>Secondary (Deep Teal)</h3>
+                    <p><code>#005A5A</code></p>
+                    <p>Used for: Navigation links, call-to-action cards, and active filter tags.</p>
+                </div>
+                <div class="color-box accent-bg">
+                    <h3>Accent (Sultan Gold)</h3>
+                    <p><code>#F2B01E</code></p>
+                    <p>Used for: Badges, rating stars, hover states, and key highlights.</p>
+                </div>
+                <div class="color-box dark-bg">
+                    <h3>Dark Neutral (Deep Slate)</h3>
+                    <p><code>#1A202C</code></p>
+                    <p>Used for: Main headings, readable body copy, and modal backgrounds.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="plan-section">
+            <h2>Typography</h2>
+            <div class="font-demo">
+                <h3 class="heading-font-sample">Heading Font: Montserrat</h3>
+                <p class="heading-font-sample">Montserrat provides a bold, modern typeface ideal for eye-catching headers (H1, H2, H3), hero captions, and navigation bar elements.</p>
+
+                <h3 class="body-font-sample">Body Text Font: Open Sans</h3>
+                <p class="body-font-sample">Open Sans ensures clear legibility across desktop and mobile screens for tour descriptions, modal dialog itineraries, form fields, and table content.</p>
+            </div>
+        </section>
+
+        <section class="plan-section">
+            <h2>Wireframes</h2>
+            <p>Structural wireframe layouts showing how page components adapt between mobile viewports and desktop grid structures.</p>
+
+            <div class="wireframe-container">
+                <figure>
+                    <img src="images/wireframes.webp" alt="Black and white sketch showing mobile view with stacked hero section, single-column tour cards, and bottom footer. black and white sketch showing desktop view with multi-column layout, top navigation, sidebar filters, and modal overlay." width="800" height="350">
+                    <figcaption>Mobile and Desktop Viewports (Small Screen and Large Screen Grid)</figcaption>
+                </figure>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | EcoAdventure Venezuela Site Plan | Robert Bruzual</p>
+    </footer>
+</body>
+</html>
