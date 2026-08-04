@@ -85,14 +85,13 @@ nav a:hover, nav a.active {
 
 .discover-card button {
     margin-top: auto;
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
     background-color: #004d40;
     color: #ffffff;
     border: none;
-    padding: 0.6rem 1.2rem;
-    border-radius: 5px;
+    border-radius: 4px;
     font-weight: bold;
-    cursor: pointer;
-    transition: background 0.2s ease;
 }
 
 .discover-card button:hover {
@@ -112,12 +111,6 @@ nav a:hover, nav a.active {
     height: 100%;
     object-fit: cover;
     display: block;
-}
-
-.discover-card button {
-    margin-top: auto;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
 }
 
 .discover-container {
@@ -179,16 +172,5 @@ nav a:hover, nav a.active {
     .discover-card img:hover {
         transform: scale(1.05);
         filter: brightness(1.1) drop-shadow(0 4px 8px rgba(0,0,0,0.3));
-    }
-}
-
-@media screen and (min-width: 1025px) {
-    .discover-container {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: 
-        "card1 card1 card2"
-        "card3 card4 card4"
-        "card5 card6 card7"
-        "card8 card8 card7";
     }
 }
