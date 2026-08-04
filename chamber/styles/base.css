@@ -1,0 +1,194 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 1.5rem;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #004d40;
+    color: #fff;
+    padding: 1rem 2rem;
+    margin: 0 -1.5rem 1.5rem -1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header nav a:hover,
+header nav a.active {
+    color: #a7ffeb;
+    text-decoration: underline;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #b2dfdb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover, nav a.active {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.visit-banner {
+    background-color: #e0f7fa;
+    border-left: 4px solid #00796b;
+    padding: 1rem;
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+.discover-card {
+    border: 1px solid #e0e0e0;
+    padding: 1.25rem;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.discover-card h2 {
+    margin-top: 0;
+    color: #004d40;
+    font-size: 1.25rem;
+}
+
+.discover-card address {
+    font-style: italic;
+    color: #222222;
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+.discover-card button {
+    margin-top: auto;
+    background-color: #004d40;
+    color: #ffffff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.discover-card button:hover {
+    background-color: #00251a;
+}
+
+.discover-card figure {
+    margin: 0;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.discover-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.discover-card button {
+    margin-top: auto;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.discover-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1.5rem;
+    align-items: start;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "card1" 
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8";
+}
+
+.card-1 { grid-area: card1; }
+.card-2 { grid-area: card2; }
+.card-3 { grid-area: card3; }
+.card-4 { grid-area: card4; }
+.card-5 { grid-area: card5; }
+.card-6 { grid-area: card6; }
+.card-7 { grid-area: card7; }
+.card-8 { grid-area: card8; }
+
+.button-top-left {
+    color: #ffffff;
+    background-color: #004d40;
+}
+
+.button-top-right {
+    background-color: #000000;
+    color: #004d40;
+}
+
+.button-bottom-left {
+    color: #ffffff;
+    background-color: #00796b;
+}
+
+@media screen and (min-width: 641px) {
+    .discover-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "card1 card2"
+        "card3 card4"
+        "card5 card6"
+        "card7 card8";
+    }
+
+    .discover-card img {
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .discover-card img:hover {
+        transform: scale(1.05);
+        filter: brightness(1.1) drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .discover-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "card1 card1 card2"
+        "card3 card4 card4"
+        "card5 card6 card7"
+        "card8 card8 card7";
+    }
+}
